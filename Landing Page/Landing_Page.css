@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 5%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.nav a,
+.log-in a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nav a:nth-last-child(1) {
+    color: blue;
+    border: 2px solid blue;
+    padding: 15px 25px;
+}
+
+.log-in {
+    padding-left: 50px;
+}
+
+.log-in a {
+    margin-left: 5px;
+}
+
+.log-in i {
+    font-size: 20px;
+}
+
+.blue {
+    width: 100%;
+    height: 100vh;
+    background: navy;
+    position: relative;
+}
+
+.blue .sub {
+    position: absolute;
+    margin: 250px auto 0;
+    width: 555px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.blue .sub h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.blue .sub p {
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.blue .sub button {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 20px;
+}
+
+.blue .first-img {
+    position: absolute;
+    bottom: -90px;
+    left: 100px;
+    width: 450px;
+    height: auto;
+    z-index: 3;
+}
+
+.blue .sec-img {
+    position: absolute;
+    right: 180px;
+    bottom: 30px;
+    width: 300px;
+    height: auto;
+    z-index: 3;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+svg {
+    position: absolute;
+    bottom: -51px;
+    z-index: 2;
+}
+
+.sec {
+    background: #E5E5E5;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sec .frame1 {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+.sec .frame2 {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+
+.sec .sub {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sec .sub h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.list {
+    display: flex;
+    gap: 75px;
+    margin-top: 100px;
+}
+
+.list .part {
+    width: 220px;
+}
+
+.list .part img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.list .part p {
+    line-height: 30px;
+}
+
+.three,
+.four,
+.five,
+.six,
+.seven {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.three {
+    background: black;
+}
+
+.three .text {
+    width: 410px;
+    color: white;
+}
+
+.three .text h2 {
+    width: 350px;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+}
+
+.three .text p {
+    margin-top: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.four .text {
+    width: 400px;
+}
+
+.four .text h2 {
+    font-size: 25px;
+    width: 340px;
+    line-height: 35px;
+}
+
+.four .text p {
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+.five {
+    background: black;
+}
+
+.five .text {
+    width: 350px;
+    color: white;
+}
+
+.five .text h2 {
+    font-size: 25px;
+    width: 330px;
+    line-height: 35px;
+    color: white;
+}
+
+.five .text p {
+    margin: 25px 0;
+    line-height: 25px;
+    color: white;
+}
+
+.six .text {
+    width: 390px;
+}
+
+.six .text h2 {
+    font-size: 25px;
+    width: 330px;
+    line-height: 35px;
+}
+
+.six .text p {
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+.seven .text {
+    width: 360px;
+}
+
+.seven .text h2 {
+    font-size: 25px;
+    width: 320px;
+    line-height: 35px;
+}
+
+.seven .text p {
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+.text a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background: black;
+    padding: 55px 5% 55px 15%;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer .top {
+    display: flex;
+}
+
+.top .part {
+    flex: 1;
+}
+
+.top .part ul {
+    list-style: none;
+}
+
+.top .part ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.top .part ul li:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bottom {
+    display: flex;
+    font-size: 15px;
+    max-width: 830px;
+    justify-content: space-between;
+}

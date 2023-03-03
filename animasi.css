@@ -1,0 +1,14 @@
+*{
+   text-align: center;
+   position: relative;
+
+}
+#switchInput{
+    display: none;
+}
+#switch{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+}

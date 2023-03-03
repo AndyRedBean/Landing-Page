@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav {
+    background: grey;
+    padding: 10px;
+    position: fixed;
+    width:100%;
+    z-index:1;
+    font-size:25px;
+}
+.box{
+    width:100px;
+    height:100px;
+}
+.merah{
+    background: red;
+    position: absolute;
+    right:0;
+}
+.hijau{
+    background: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hitam{
+    background: black;
+    position: sticky;
+    color: white;
+    margin: auto;
+    margin-top: 350px;
+    top: 0;
+    text-align: center;
+}
+.biru{
+    background: blue;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.kuning{
+    background: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.container{
+    border: 5px solid black;
+    width: 600px;
+    height: 800px;
+    margin:auto;
+    top:100px;
+    position: relative;
+}

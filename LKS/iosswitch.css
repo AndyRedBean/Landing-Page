@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90vw;
+    min-height: 100vh;
+    display: flex;
+}
+
+#switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    width: 8em;
+    height: 50px;
+    font-size: 30px;
+
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10em;
+}
+
+#switchInput {
+    display: none;
+}
+
+.lightBtn,
+.darkBtn {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.lightBtn {
+    background-color: aqua;
+}
+
+.darkBtn {
+    background-color: darkblue;
+}
+
+#switchInput:checked~#switch .lightBtn,
+#switchInput:not(:checked)~#switch .darkBtn {
+    animation: scaleDown 0.5s ease-in-out forwards,
+        pop 0.5s 0.5s ease-in-out forwards;
+}
+
+#switchInput:checked~#switch .darkBtn,
+#switchInput:not(:checked)~#switch .lightBtn {
+    animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        scale: 1;
+        z-index: 2;
+    }
+
+    100% {
+        scale: 13;
+        z-index: 2;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        scale: 13;
+        z-index: 1;
+    }
+
+    100% {
+        scale: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes pop {
+    0% {
+        z-index: 3;
+        scale: 0;
+    }
+
+    50% {
+        z-index: 3;
+        scale: 1.1;
+    }
+
+    100% {
+        z-index: 3;
+        scale: 1;
+    }
+}
